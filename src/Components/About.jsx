@@ -1,11 +1,82 @@
-import React from 'react'
+import React from "react";
+import Image from "../../src/assets/me.png";
 
 const About = () => {
+  const skills = [
+    "HTLM",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Python",
+    "SQL",
+    "Machine Learning",
+    "Data Visualization",
+    "Git",
+  ];
   return (
-    <div
-    className='bg-[#111418] h-screen'
-    >About</div>
-  )
-}
+    <div className="bg-[#111418] h-screen flex flex-col gap-5 w-full">
+      //top div
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-3 md:w-[60%] pt-10">
+        <img
+          className="w-[200px] h-[200px] rounded-full
+        "
+          src={Image}
+          alt=""
+        />
+        <div className="flex flex-col items-center md:items-start gap-2">
+          <h2 className="text-[#e5e5e5] font-bold text-3xl">Stanley Amunze</h2>
+          <span className="text-[#6a747e]">Web Developer & Data Scientist</span>
+          <p className="text-[#6a747e]">Based in Ongata Rongai, KE</p>
+        </div>
+      </div>
+      <div className="w-full flex flex-row items-center justify-center">
+        <div className="flex flex-col gap-5 w-[2/3]">
+          <div className="flex flex-col gap-3 w-full justify-center">
+            <h3 className="text-[#e5e5e5] text-2xl font-bold">About Me</h3>
+            <p className="text-[#9dabb9] text-base font-normal leading-normal">
+              I am a versatile web developer and data scientist with a passion
+              for creating innovative solutions. My expertise spans front-end
+              and back-end development, as well as data analysis and machine
+              learning. I thrive on tackling complex challenges and delivering
+              impactful results.
+            </p>
+          </div>
+          <div className="flex flex-col gap-3 w-full justify-center">
+            <h2 className="text-white text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">
+              Interests
+            </h2>
+            <p className="text-[#9dabb9] text-base font-normal leading-normal">
+              Outside of work, I enjoy exploring new technologies, contributing
+              to open-source projects, and staying active through gaming and
+              watching anime. I also have a keen interest in video editing .
+            </p>
+          </div>
+        </div>
+        <div className="w-[1/3]">
+          <div className="flex flex-col gap-3 w-full justify-center">
+            <h2 className="text-[#e5e5e5] text-2xl font-bold">Skills</h2>
+            <ul className="flex flex-wrap justify-evenly gap-2">
+              {skills.map((skill) => (
+                <li className="text-[#e5e5e5] text-[12px] bg-[#283039] rounded-md p-2 font-bold">
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <div className="flex flex-col gap-3 w-full justify-center">
+              <h2 className="text-[#e5e5e5] text-2xl font-bold">Education</h2>
+              <div>
+                <h3>Murang'a University</h3>
+                <p>Bachelor of Science in Computer Technolody</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default About
+export default About;
