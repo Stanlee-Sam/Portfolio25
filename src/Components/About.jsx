@@ -3,7 +3,7 @@ import Image from "../../src/assets/me.png";
 
 const About = () => {
   const skills = [
-    "HTLM",
+    "HTML",
     "CSS",
     "JavaScript",
     "React",
@@ -15,9 +15,8 @@ const About = () => {
     "Git",
   ];
   return (
-    <div className="bg-[#111418] h-screen flex flex-col gap-5 w-full">
-      //top div
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-3 md:w-[60%] pt-10">
+    <div className="bg-[#111418] flex flex-col gap-5 w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-3 md:w-[60%] ">
         <img
           className="w-[200px] h-[200px] rounded-full
         "
@@ -30,8 +29,8 @@ const About = () => {
           <p className="text-[#6a747e]">Based in Ongata Rongai, KE</p>
         </div>
       </div>
-      <div className="w-full flex flex-row items-center justify-center">
-        <div className="flex flex-col gap-5 w-[2/3]">
+      <div className="w-full md:w-[80%] mx-auto flex md:flex-row flex-col gap-4 items-center justify-center md:justify-items-center">
+        <div className="flex flex-col gap-5 w-[80%] md:w-2/3 ">
           <div className="flex flex-col gap-3 w-full justify-center">
             <h3 className="text-[#e5e5e5] text-2xl font-bold">About Me</h3>
             <p className="text-[#9dabb9] text-base font-normal leading-normal">
@@ -53,10 +52,10 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="w-[1/3]">
+        <div className="w-[80%] flex flex-col gap-3 md:w-1/3">
           <div className="flex flex-col gap-3 w-full justify-center">
             <h2 className="text-[#e5e5e5] text-2xl font-bold">Skills</h2>
-            <ul className="flex flex-wrap justify-evenly gap-2">
+            <ul className="flex flex-wrap  gap-4">
               {skills.map((skill) => (
                 <li className="text-[#e5e5e5] text-[12px] bg-[#283039] rounded-md p-2 font-bold">
                   {skill}
@@ -67,9 +66,9 @@ const About = () => {
           <div>
             <div className="flex flex-col gap-3 w-full justify-center">
               <h2 className="text-[#e5e5e5] text-2xl font-bold">Education</h2>
-              <div>
-                <h3>Murang'a University</h3>
-                <p>Bachelor of Science in Computer Technolody</p>
+              <div className="flex flex-col gap-2">
+                <h3 className="font-semibold text-[#e5e5e5] text-[20px] ">Murang'a University of Technology</h3>
+                <p className="text-[#9dabb9]">Bachelor of Science in Computer Technolody</p>
               </div>
             </div>
           </div>
