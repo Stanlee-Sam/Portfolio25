@@ -15,7 +15,7 @@ const About = () => {
     "Git",
   ];
   return (
-    <div className="bg-[#111418] flex flex-col gap-5 w-full">
+    <div className="bg-[#111418] flex flex-col gap-5 w-full min-h-screen">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-3 md:w-[60%] ">
         <img
           className="w-[200px] h-[200px] rounded-full
