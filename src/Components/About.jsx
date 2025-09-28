@@ -15,14 +15,16 @@ const About = () => {
     "Git",
   ];
   return (
-    <div className="bg-[#111418] flex flex-col gap-5 w-full min-h-screen">
+    <div className="bg-[#111418] flex flex-col gap-5 w-full md:h-[calc(100vh-64px)] mt-16 pb-4">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-3 md:w-[60%] ">
         <img
-          className="w-[200px] h-[200px] rounded-full
-        "
+          className="w-[200px] h-[200px] rounded-full object-cover 
+             border-4 border-[#283039] shadow-lg shadow-black/40
+             hover:scale-105 transition-transform duration-300 ease-in-out"
           src={Image}
-          alt=""
+          alt="Stanley"
         />
+
         <div className="flex flex-col items-center md:items-start gap-2">
           <h2 className="text-[#e5e5e5] font-bold text-3xl">Stanley Amunze</h2>
           <span className="text-[#6a747e]">Web Developer & Data Scientist</span>
@@ -67,8 +69,12 @@ const About = () => {
             <div className="flex flex-col gap-3 w-full justify-center">
               <h2 className="text-[#e5e5e5] text-2xl font-bold">Education</h2>
               <div className="flex flex-col gap-2">
-                <h3 className="font-semibold text-[#e5e5e5] text-[20px] ">Murang'a University of Technology</h3>
-                <p className="text-[#9dabb9]">Bachelor of Science in Computer Technolody</p>
+                <h3 className="font-semibold text-[#e5e5e5] text-[20px] ">
+                  Murang'a University of Technology
+                </h3>
+                <p className="text-[#9dabb9]">
+                  Bachelor of Science in Computer Technolody
+                </p>
               </div>
             </div>
           </div>
