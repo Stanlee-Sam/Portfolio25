@@ -49,7 +49,7 @@ const DevProDetails = () => {
             </ul>
             <h3 className="text-white text-[17px] font-bold">Links</h3>
             <a
-              href=""
+              href={project.liveUrl}
               className="bg-[#1173d5] hover:bg-[#9dabb9] hover:text-black flex flex-row items-center justify-center gap-2 font-semibold text-white rounded-md p-2"
             >
               <span>
@@ -58,7 +58,7 @@ const DevProDetails = () => {
               Live Demo
             </a>
             <a
-              href=""
+              href={project.repoUrl}
               className="bg-[#293139] hover:bg-[#9dabb9] hover:text-black flex flex-row items-center justify-center gap-2 font-semibold text-white rounded-md p-2"
             >
               <span>

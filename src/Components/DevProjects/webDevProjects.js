@@ -19,6 +19,8 @@ export const devProjects = [
       "Secure authentication and data privacy",
     ],
     technologies: ["React", "Tailwind CSS", "Node.js", "Prisma"],
+    liveUrl : 'https://neuro-care-plum.vercel.app/',
+    repoUrl : 'https://github.com/Stanlee-Sam/NeuroCare.git',
   },
   {
     id: 2,
@@ -36,6 +38,8 @@ export const devProjects = [
       "CSS and SCSS styling",
     ],
     technologies: ["React", "JavaScript", "Node.js", "Express", "CSS", "SCSS"],
+    liveUrl : 'https://neuro-care-plum.vercel.app/',
+    repoUrl : 'https://github.com/Stanlee-Sam/NeuroCare.git',
   },
   {
     id: 3,
@@ -52,6 +56,8 @@ export const devProjects = [
       "Admin page for adding and managing products",
     ],
     technologies: ["React", "HTML", "CSS", "Node.js", "Express", "Prisma"],
+    liveUrl : 'https://neuro-care-plum.vercel.app/',
+    repoUrl : 'https://github.com/Stanlee-Sam/NeuroCare.git',
   },
   {
     id: 4,
@@ -69,5 +75,7 @@ export const devProjects = [
       "Animated section transitions with Framer Motion",
     ],
     technologies: ["React", "HTML", "CSS", "Tailwind CSS", "Framer Motion"],
+    liveUrl : 'https://smart-wraps.vercel.app/',
+    repoUrl : 'https://github.com/Stanlee-Sam/SmartWraps.git',
   },
 ];

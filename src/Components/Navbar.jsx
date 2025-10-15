@@ -44,12 +44,12 @@ const Navbar = () => {
             </Link>
           </ul>
           <div className="flex flex-row gap-2">
-            <button className="bg-[#283039] rounded-full p-2 text-[#e5e5e5] cursor-pointer hover:bg-[#e5e5e5] hover:text-black">
+            <a href ='https://github.com/Stanlee-Sam' className="bg-[#283039] rounded-full p-2 text-[#e5e5e5] cursor-pointer hover:bg-[#e5e5e5] hover:text-black">
               <LuGithub />
-            </button>
-            <button className="bg-[#283039] rounded-full p-2 text-[#e5e5e5] cursor-pointer hover:bg-[#e5e5e5] hover:text-black">
+            </a>
+            <a href ='https://www.linkedin.com/in/stanley-amunze/' className="bg-[#283039] rounded-full p-2 text-[#e5e5e5] cursor-pointer hover:bg-[#e5e5e5] hover:text-black">
               <CiLinkedin />
-            </button>
+            </a>
           </div>
         </div>
       </div>
