@@ -73,7 +73,7 @@ const About = () => {
                   Murang'a University of Technology
                 </h3>
                 <p className="text-[#9dabb9]">
-                  Bachelor of Science in Computer Technolody
+                  Bachelor of Science in Computer Technolody - Second Class Upper Division
                 </p>
               </div>
             </div>

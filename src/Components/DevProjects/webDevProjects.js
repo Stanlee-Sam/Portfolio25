@@ -38,8 +38,9 @@ export const devProjects = [
       "CSS and SCSS styling",
     ],
     technologies: ["React", "JavaScript", "Node.js", "Express", "CSS", "SCSS"],
-    liveUrl : 'https://neuro-care-plum.vercel.app/',
-    repoUrl : 'https://github.com/Stanlee-Sam/NeuroCare.git',
+    liveUrl : 'https://connectify-teal-psi.vercel.app/',
+    repoUrl : 'https://github.com/Stanlee-Sam/Connectify.git',
+    note : 'This project is currently optimized for desktop browsers. A mobile-responsive update is planned for a future release.'
   },
   {
     id: 3,
@@ -56,8 +57,10 @@ export const devProjects = [
       "Admin page for adding and managing products",
     ],
     technologies: ["React", "HTML", "CSS", "Node.js", "Express", "Prisma"],
-    liveUrl : 'https://neuro-care-plum.vercel.app/',
-    repoUrl : 'https://github.com/Stanlee-Sam/NeuroCare.git',
+    liveUrl : 'https://gamer-hub-phi.vercel.app/',
+    repoUrl : 'https://github.com/Stanlee-Sam/GamerHub_.git',
+    note : 'This project is currently optimized for desktop browsers. A mobile-responsive update is planned for a future release.'
+
   },
   {
     id: 4,
