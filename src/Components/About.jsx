@@ -50,7 +50,7 @@ const About = () => {
             </h2>
             <p className="text-[#9dabb9] text-base font-normal leading-normal">
               Outside of work, I enjoy exploring new technologies and staying active through gaming and
-              watching anime. I also have a keen interest in video editing .
+              watching anime. I also have a keen interest in video editing.
             </p>
           </div>
         </div>
