@@ -45,7 +45,7 @@ const About = () => {
             </p>
           </div>
           <div className="flex flex-col gap-3 w-full justify-center">
-            <h2 className="text-white text-2xl font-bold leading-tight tracking-[-0.015em] mb-4">
+            <h2 className="text-white text-2xl font-bold leading-tight tracking-[-0.015em] ">
               Interests
             </h2>
             <p className="text-[#9dabb9] text-base font-normal leading-normal">

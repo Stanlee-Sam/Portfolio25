@@ -7,6 +7,9 @@ import DevProDetails from './Components/DevProjects/DevProDetails'
 import { Route, Routes } from "react-router-dom";
 import DataProjects from "./Components/DataProjects/DataProjects";
 import DevProjects from "./Components/DevProjects/DevProjects";
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const App = () => {
   return (
@@ -19,6 +22,7 @@ const App = () => {
         <Route path="/project/:id" element={<DevProDetails />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 };
