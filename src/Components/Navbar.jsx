@@ -67,7 +67,7 @@ const Navbar = () => {
         </div>
         {isOpen && (
           <div
-            className={`fixed top-0 right-0 z-40 h-full w-[80%] bg-[#111418] md:hidden flex flex-col items-center gap-2 pt-20  border-black  transition-all duration-300 ease-in-out ${
+            className={`fixed top-0 right-0 z-40 h-full w-full bg-[#111418] md:hidden flex flex-col items-center gap-2 pt-20  border-black  transition-all duration-300 ease-in-out ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
