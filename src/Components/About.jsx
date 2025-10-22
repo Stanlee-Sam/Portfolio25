@@ -5,6 +5,7 @@ const About = () => {
   const skills = [
     "HTML",
     "CSS",
+    'Tailwind CSS',
     "JavaScript",
     "React",
     "Node.js",
@@ -15,7 +16,7 @@ const About = () => {
     "Git",
   ];
   return (
-    <div className="bg-[#111418] flex flex-col gap-5 w-full  mt-16 pb-4">
+    <div className="bg-[#111418] flex flex-col md:h-screen gap-5 w-full  mt-16 pb-4">
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-3 md:w-[60%] ">
         <img
           className="w-[200px] h-[200px] rounded-full object-cover 

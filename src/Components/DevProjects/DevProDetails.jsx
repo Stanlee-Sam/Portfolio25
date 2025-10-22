@@ -66,7 +66,7 @@ const DevProDetails = () => {
               </span>
               Repository
             </a>
-            <p className=" text-white font-semibold text-[13px]"><span className="font-bold text-red-500">Note: </span>{project.note}</p>
+            <p className=" text-white font-semibold text-[13px]">{project.note}</p>
           </div>
         </div>
       </div>

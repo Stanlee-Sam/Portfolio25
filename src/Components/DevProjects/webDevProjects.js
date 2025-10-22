@@ -66,7 +66,7 @@ export const devProjects = [
     id: 4,
     title: "SmartWraps",
     description:
-      "A colourful landing page for a small business selling precovered books to children.",
+      "A colourful landing page for a small business selling precovered books to school children.",
     overview:
       "SmartWraps is designed to attract parents during the back-to-school season. It features a product carousel, modals for detailed product views, and smooth animations to enhance user engagement.",
     image: SmartWraps,
