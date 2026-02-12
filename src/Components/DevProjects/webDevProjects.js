@@ -1,8 +1,8 @@
 import NeuroCare from "../../assets/NeuroCare.png";
 import Connectify from "../../assets/Connectify.png";
 import GamerHub from "../../assets/GamerHub.png";
-import SmartWraps from "../../assets/SmartWraps.png";
 import Mune from "../../assets/Mune.png";
+import SmartWraps from "../../assets/SmartWraps.png";
 
 export const devProjects = [
   {
