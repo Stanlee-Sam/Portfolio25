@@ -34,14 +34,14 @@ const Navbar = () => {
               to="/webprojects/"
               className="hover:text-[#e5e5e5] cursor-pointer hover:bg-[#283039] p-2 rounded-md"
             >
-              Web Development
+              Projects
             </Link>
-            <Link
+            {/* <Link
               to="/dataprojects/"
               className="hover:text-[#e5e5e5] cursor-pointer hover:bg-[#283039] p-2 rounded-md"
             >
               Data Science
-            </Link>
+            </Link> */}
 
             <Link
               to="/contact"
@@ -87,10 +87,10 @@ const Navbar = () => {
               style={{ fontFamily: "'Bree Serif'" }}
               className="w-[80%] rounded-lg  py-2 text-center  text-white text-lg font-bold cursor-pointer hover:bg-[#1174d5]  hover:text-white transition-colors duration-300"
             >
-              Web Development
+              Projects
             </Link>
             <hr className="border-t-2 border-white w-4/5" />
-            <Link
+            {/* <Link
               to="/dataprojects/"
               onClick={toggleHamburger}
               style={{ fontFamily: "'Bree Serif'" }}
@@ -98,7 +98,7 @@ const Navbar = () => {
             >
               Data Science
             </Link>
-            <hr className="border-t-2 border-white w-4/5" />
+            <hr className="border-t-2 border-white w-4/5" /> */}
             <Link
               to="/contact"
               onClick={toggleHamburger}
