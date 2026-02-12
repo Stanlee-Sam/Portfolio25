@@ -20,7 +20,7 @@ const About = () => {
     "Git",
   ];
   return (
-    <div className="bg-[#111418] flex flex-col md:h-[calc(100vh-64px)] items-center gap-5 w-full  mt-16 pb-16 md:pb-0 ">
+    <div className="bg-[#111418] flex flex-col min-h-[calc(100vh-64px)] items-center gap-5 w-full mt-16 pb-16">
       <div className="flex flex-col md:flex-row items-center justify-start gap-4 py-3 md:w-[80%] ">
         <img
           className="w-[200px] h-[200px] rounded-full object-cover 
