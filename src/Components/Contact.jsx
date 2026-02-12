@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-[#111418] pt-4 flex items-center justify-center md:h-[calc(100vh-64px)] mt-16 pb-4 ">
+    <div className="bg-[#111418] pt-4 flex items-center justify-center md:h-[calc(100vh-64px)] mt-16 pb-16">
       <div className=" pt-3 flex flex-col md:flex-row items-center md:justify-items-center mx-auto gap-5 w-full md:w-[80%] ">
         <div className="w-[80%] md:w-1/2 flex flex-col gap-5">
           <div className="w-full flex flex-col items-center">

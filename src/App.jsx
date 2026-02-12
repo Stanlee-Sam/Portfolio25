@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-[#111418]">
       <Navbar />
       <Routes>
         <Route path="/" element={<About />} />

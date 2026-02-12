@@ -20,8 +20,8 @@ const About = () => {
     "Git",
   ];
   return (
-    <div className="bg-[#111418] flex flex-col md:h-screen gap-5 w-full  mt-16 pb-4">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 p-3 md:w-[60%] ">
+    <div className="bg-[#111418] flex flex-col md:h-[calc(100vh-64px)] items-center gap-5 w-full  mt-16 pb-16 md:pb-0 ">
+      <div className="flex flex-col md:flex-row items-center justify-start gap-4 py-3 md:w-[80%] ">
         <img
           className="w-[200px] h-[200px] rounded-full object-cover 
              border-4 border-[#283039] shadow-lg shadow-black/40
@@ -36,7 +36,7 @@ const About = () => {
           <p className="text-[#6a747e]">Based in Ongata Rongai, KE</p>
         </div>
       </div>
-      <div className="w-full md:w-[80%] mx-auto flex md:flex-row flex-col gap-4 items-center justify-center md:justify-items-center">
+      <div className="w-full md:w-[80%] mx-auto flex md:flex-row flex-col gap-4 items-center md:items-start justify-center md:justify-items-center">
         <div className="flex flex-col gap-5 w-[80%] md:w-2/3 ">
           <div className="flex flex-col gap-3 w-full justify-center">
             <h3 className="text-[#e5e5e5] text-2xl font-bold">About Me</h3>

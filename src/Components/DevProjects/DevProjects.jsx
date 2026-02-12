@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const DevProjects = () => {
   return (
-    <div className="bg-[#111418]  flex flex-col items-center pt-3 gap-3  mt-16 w-full pb-4">
+    <div className="bg-[#111418]  flex flex-col items-center pt-3 gap-3 w-full mt-16 pb-16">
       <div className="w-[80%] flex flex-col items-center gap-4">
         <h2 className="text-white text-4xl font-bold leading-tight tracking-[-0.015em] mb-4">
           Web Development Projects

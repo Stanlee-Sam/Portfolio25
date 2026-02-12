@@ -11,7 +11,7 @@ const DevProDetails = () => {
 
   return (
     <div className=" bg-[#111418] flex flex-col items-center gap-3 w-full p-3  mt-16 pb-16">
-      <div className="w-[80%]">
+      <div className="w-[80%] flex flex-col gap-6">
         <div className="flex flex-col gap-2">
           <h2 className="text-[25px] text-white font-bold">{project.title}</h2>
           <p className="text-[#9dabb9]">{project.description}</p>
