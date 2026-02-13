@@ -151,6 +151,7 @@ const Contact = () => {
               Your Name
             </label>
             <input
+              required
               name="user_name"
               type="text"
               placeholder="Enter your name"
@@ -162,6 +163,7 @@ const Contact = () => {
               Email address
             </label>
             <input
+            required
               name="user_email"
               type="text"
               placeholder="Enter your email"
@@ -173,6 +175,7 @@ const Contact = () => {
               Subject
             </label>
             <input
+            required
               name="subject"
               type="text"
               placeholder="Enter the subject"
@@ -184,6 +187,7 @@ const Contact = () => {
               Message
             </label>
             <textarea
+            required
               name="message"
               placeholder="Enter your message"
               id=""
