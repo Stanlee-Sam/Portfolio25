@@ -35,6 +35,7 @@ const DevProjects = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 2 }}
+          viewport={{ once: true }}
           className="text-[#575f68] text-center text-[15px] md:text-[20px] font-semibold"
         >
           Here are some of the web development projects I have worked on. Click
