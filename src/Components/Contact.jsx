@@ -4,6 +4,7 @@ import { LuGithub } from "react-icons/lu";
 import { MdOutlineMail } from "react-icons/md";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { motion } from "motion/react";
 
 const Contact = () => {
   const form = useRef();
@@ -18,7 +19,7 @@ const Contact = () => {
         form.current,
         {
           publicKey: import.meta.env.VITE_PUBLIC_KEY,
-        }
+        },
       )
       .then(
         () => {
@@ -52,7 +53,7 @@ const Contact = () => {
               fontWeight: "600",
             },
           });
-        }
+        },
       );
   };
 
@@ -60,7 +61,18 @@ const Contact = () => {
     <div className="bg-[#111418] pt-4 flex items-center justify-center md:h-[calc(100vh-64px)] mt-16 pb-16">
       <div className=" pt-3 flex flex-col md:flex-row items-center md:justify-items-center mx-auto gap-5 w-full md:w-[80%] ">
         <div className="w-[80%] md:w-1/2 flex flex-col gap-5">
-          <div className="w-full flex flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 3,
+              type: "spring",
+              ease: "easeInOut",
+              delay: 0.5,
+            }}
+            viewport={{ once: true }}
+            className="w-full flex flex-col items-center"
+          >
             <h2 className="text-white text-4xl font-bold leading-tight tracking-[-0.015em] mb-4">
               Get in Touch
             </h2>
@@ -69,8 +81,18 @@ const Contact = () => {
               from you. Whether you have a question, a project propasal or just
               want to say hi, feel free to reach out.
             </p>
-          </div>
-          <div className="flex flex-col gap-3 w-full">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 4,
+              type: "spring",
+              ease: "easeInOut",
+              delay: 0.5,
+            }}
+            className="flex flex-col gap-3 w-full"
+          >
             <div className="flex flex-row gap-3">
               <div className="bg-[#1e293b] flex items-center rounded-md p-2 text-2xl text-white">
                 <MdOutlineMail />
@@ -108,9 +130,17 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <form
+        <motion.form
+          initial={{ opacity: 0, y: 80 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 5,
+            type: "spring",
+            ease: "easeInOut",
+            delay: 0.5,
+          }}
           ref={form}
           onSubmit={sendEmail}
           action=""
@@ -161,14 +191,17 @@ const Contact = () => {
             ></textarea>
           </div>
           <div className="w-[90%] flex justify-center ">
-            <button
+            <motion.button
+              whileHover={{ scale: 1.03, y: -1 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 300, damping: 18 }}
               type="submit"
               className="bg-[#1173d4] font-bold text-white rounded-md p-2 cursor-pointer hover:bg-[#9dabb9] hover:text-black w-full"
             >
               Send Message
-            </button>
+            </motion.button>
           </div>
-        </form>
+        </motion.form>
       </div>
     </div>
   );
