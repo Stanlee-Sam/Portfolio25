@@ -123,7 +123,7 @@ const DevProDetails = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 3 }}
               viewport={{ once: true }}
-              className="w-full flex flex-col md:flex-row gap-5"
+              className="w-full flex flex-col gap-5"
             >
               <motion.h3
                 initial={{ opacity: 0, y: 50 }}
