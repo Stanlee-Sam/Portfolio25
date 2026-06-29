@@ -3,7 +3,7 @@ import Connectify from "../../assets/Connectify.png";
 import GamerHub from "../../assets/GamerHub.png";
 import Mune from "../../assets/mune.png";
 import SmartWraps from "../../assets/SmartWraps.png";
-import SmartSeason from "../../assets/SmartSeason.png"
+import SmartSeason from "../../assets/SmartSeason.png";
 
 export const devProjects = [
   {
@@ -31,8 +31,10 @@ export const devProjects = [
       "JWT",
     ],
     status: "Completed",
-    liveUrl: "https://smart-season-field-monitoring-syste-alpha-coral.vercel.app",
-    repoUrl: "https://github.com/Stanlee-Sam/SmartSeason-Field-Monitoring-System.git",
+    liveUrl:
+      "https://smart-season-field-monitoring-syste-alpha-coral.vercel.app",
+    repoUrl:
+      "https://github.com/Stanlee-Sam/SmartSeason-Field-Monitoring-System.git",
   },
   {
     id: 2,
@@ -61,7 +63,7 @@ export const devProjects = [
       "JWT",
       "Cloudinary",
     ],
-    status : 'Completed',
+    status: "Completed",
     liveUrl: "https://mune-five.vercel.app/",
     repoUrl: "https://github.com/Stanlee-Sam/Mune.git",
   },
@@ -93,7 +95,7 @@ export const devProjects = [
       "Google Gemini",
       "VADER Sentiment",
     ],
-    status : 'Completed',
+    status: "Completed",
     liveUrl: "https://neuro-care-plum.vercel.app/",
     repoUrl: "https://github.com/Stanlee-Sam/NeuroCare.git",
   },
@@ -131,7 +133,7 @@ export const devProjects = [
       "Nodemon",
       "ESLint",
     ],
-    status : 'Completed',
+    status: "Completed",
     liveUrl: "https://connectify-teal-psi.vercel.app/",
     repoUrl: "https://github.com/Stanlee-Sam/Connectify.git",
   },
@@ -160,7 +162,7 @@ export const devProjects = [
       "Cloudinary",
       "JWT",
     ],
-    status : 'Completed',
+    status: "Completed",
     liveUrl: "https://gamer-hub-phi.vercel.app/",
     repoUrl: "https://github.com/Stanlee-Sam/GamerHub_.git",
   },
@@ -189,13 +191,8 @@ export const devProjects = [
       "EmailJS",
       "ESLint",
     ],
-    status : 'Completed',
+    status: "Completed",
     liveUrl: "https://smart-wraps.vercel.app/",
     repoUrl: "https://github.com/Stanlee-Sam/SmartWraps.git",
   },
 ];
-
-
-
-
-
