@@ -57,19 +57,16 @@ const Contact = () => {
       );
   };
 
+  const defaultTransition = { duration: 0.6, ease: "easeOut", delay: 0.1 };
+
   return (
     <div className="bg-[#111418] pt-4 flex items-center justify-center md:h-[calc(100vh-64px)] mt-16 pb-16">
       <div className=" pt-3 flex flex-col md:flex-row items-center md:justify-items-center mx-auto gap-5 w-full md:w-[80%] ">
         <div className="w-[80%] md:w-1/2 flex flex-col gap-5">
           <motion.div
-            initial={{ opacity: 0, y: 80 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 3,
-              type: "spring",
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
+            transition={defaultTransition}
             viewport={{ once: true }}
             className="w-full flex flex-col items-center"
           >
@@ -83,14 +80,9 @@ const Contact = () => {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, y: 80 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 4,
-              type: "spring",
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
+            transition={defaultTransition}
             className="flex flex-col gap-3 w-full"
           >
             <div className="flex flex-row gap-3">
@@ -133,14 +125,9 @@ const Contact = () => {
           </motion.div>
         </div>
         <motion.form
-          initial={{ opacity: 0, y: 80 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 5,
-            type: "spring",
-            ease: "easeInOut",
-            delay: 0.5,
-          }}
+          transition={defaultTransition}
           ref={form}
           onSubmit={sendEmail}
           action=""
@@ -163,7 +150,7 @@ const Contact = () => {
               Email address
             </label>
             <input
-            required
+              required
               name="user_email"
               type="text"
               placeholder="Enter your email"
@@ -175,7 +162,7 @@ const Contact = () => {
               Subject
             </label>
             <input
-            required
+              required
               name="subject"
               type="text"
               placeholder="Enter the subject"
@@ -187,7 +174,7 @@ const Contact = () => {
               Message
             </label>
             <textarea
-            required
+              required
               name="message"
               placeholder="Enter your message"
               id=""

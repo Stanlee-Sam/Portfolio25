@@ -10,14 +10,20 @@ const DevProjects = () => {
     },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.3, delayChildren: 1 },
+      transition: { staggerChildren: 0.15, delayChildren: 0.1 },
     },
   };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
+
+  const defaultTransition = { duration: 0.6, ease: "easeOut", delay: 0.1 };
 
   return (
     <div className="bg-[#111418]  flex flex-col items-center pt-3 gap-3 w-full mt-16 pb-16">
@@ -25,7 +31,7 @@ const DevProjects = () => {
         <motion.h2
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
+          transition={defaultTransition}
           viewport={{ once: true }}
           className="text-white text-[20px] text-center md:text-4xl font-bold leading-tight tracking-[-0.015em] mb-4"
         >
@@ -34,7 +40,7 @@ const DevProjects = () => {
         <motion.p
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
+          transition={defaultTransition}
           viewport={{ once: true }}
           className="text-[#575f68] text-center text-[15px] md:text-[20px] font-semibold"
         >

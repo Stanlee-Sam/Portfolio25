@@ -25,26 +25,27 @@ const About = () => {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: { staggerChildren: 0.4, delayChildren: 1 },
+      transition: { staggerChildren: 0.15, delayChildren: 0.1 },
     },
   };
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
+
+  const defaultTransition = { duration: 0.6, ease: "easeOut", delay: 0.1 };
 
   return (
     <div className="bg-[#111418] flex flex-col min-h-[calc(100vh-64px)] items-center gap-5 w-full mt-16 pb-16">
       <motion.div
-        initial={{ opacity: 0, x: 80 }}
+        initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{
-          duration: 3,
-          type: "spring",
-          ease: "easeInOut",
-          delay: 0.5,
-        }}
+        transition={defaultTransition}
         viewport={{ once: true }}
         className="flex flex-col md:flex-row items-center justify-start gap-4 py-3 md:w-[80%] "
       >
@@ -65,20 +66,9 @@ const About = () => {
       <div className="w-full md:w-[80%] mx-auto flex md:flex-row flex-col gap-4 items-center md:items-start justify-center md:justify-items-center">
         <div className="flex flex-col gap-5 w-[80%] md:w-2/3 ">
           <motion.div
-            initial={{
-              opacity: 0,
-              y: 40,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 4,
-              type: "spring",
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={defaultTransition}
             viewport={{ once: true }}
             className="flex flex-col gap-3 w-full justify-center"
           >
@@ -92,21 +82,12 @@ const About = () => {
             </p>
           </motion.div>
           <motion.div
-           initial={{
-              opacity: 0,
-              y: 60,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 5,
-              type: "spring",
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
-          className="flex flex-col gap-3 w-full justify-center">
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={defaultTransition}
+            viewport={{ once: true }}
+            className="flex flex-col gap-3 w-full justify-center"
+          >
             <h2 className="text-white text-2xl font-bold leading-tight tracking-[-0.015em] ">
               Interests
             </h2>
@@ -119,22 +100,12 @@ const About = () => {
         </div>
         <div className="w-[80%] flex flex-col gap-3 md:w-1/3">
           <motion.div
-          initial={{
-              opacity: 0,
-              y: 40,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 5,
-              type: "spring",
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={defaultTransition}
             viewport={{ once: true }}
-          className="flex flex-col gap-3 w-full justify-center">
+            className="flex flex-col gap-3 w-full justify-center"
+          >
             <h2 className="text-[#e5e5e5] text-2xl font-bold">Skills</h2>
             <motion.ul
               variants={container}
@@ -146,7 +117,6 @@ const About = () => {
               {skills.map((skill) => (
                 <motion.li
                   variants={item}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
                   className="text-[#e5e5e5] text-[12px] bg-[#283039] rounded-md p-2 font-bold"
                 >
                   {skill}
@@ -155,20 +125,10 @@ const About = () => {
             </motion.ul>
           </motion.div>
           <motion.div
-           initial={{
-              opacity: 0,
-              y: 60,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{
-              duration: 5,
-              type: "spring",
-              ease: "easeInOut",
-              delay: 0.5,
-            }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={defaultTransition}
+            viewport={{ once: true }}
           >
             <div className="flex flex-col gap-3 w-full justify-center">
               <h2 className="text-[#e5e5e5] text-2xl font-bold">Education</h2>

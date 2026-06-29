@@ -3,10 +3,39 @@ import Connectify from "../../assets/Connectify.png";
 import GamerHub from "../../assets/GamerHub.png";
 import Mune from "../../assets/mune.png";
 import SmartWraps from "../../assets/SmartWraps.png";
+import SmartSeason from "../../assets/SmartSeason.png"
 
 export const devProjects = [
   {
     id: 1,
+    title: "SmartSeason",
+    description:
+      "A field monitoring system for agricultural teams to track crop progress and manage field status across a growing season.",
+    overview:
+      "SmartSeason is a comprehensive field monitoring platform that supports role-based access for admins and field agents, dynamic status tracking, and streamlined reporting for multi-field operations.",
+    image: SmartSeason,
+    keyFeatures: [
+      "Role-based access for Admins and Field Agents",
+      "Dynamic field status calculation based on lifecycle stage and timing",
+      "Field monitoring dashboard for crop progress across multiple locations",
+      "Secure authentication and data management with Prisma and PostgreSQL",
+    ],
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "JWT",
+    ],
+    status: "Completed",
+    liveUrl: "https://smart-season-field-monitoring-syste-alpha-coral.vercel.app",
+    repoUrl: "https://github.com/Stanlee-Sam/SmartSeason-Field-Monitoring-System.git",
+  },
+  {
+    id: 2,
     title: "Mune",
     description:
       "A pet health early-warning platform for symptom monitoring, outbreak alerts, and nearby clinic discovery.",
@@ -37,7 +66,7 @@ export const devProjects = [
     repoUrl: "https://github.com/Stanlee-Sam/Mune.git",
   },
   {
-    id: 2,
+    id: 3,
     title: "NeuroCare",
     description:
       "A sentiment-based mental health tracker with an AI-powered chatbot (Google Gemini).",
@@ -69,7 +98,7 @@ export const devProjects = [
     repoUrl: "https://github.com/Stanlee-Sam/NeuroCare.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "Connectify",
     description:
       "A full-stack social media platform for posting, liking, commenting, and following.",
@@ -107,7 +136,7 @@ export const devProjects = [
     repoUrl: "https://github.com/Stanlee-Sam/Connectify.git",
   },
   {
-    id: 4,
+    id: 5,
     title: "GamerHub",
     description:
       "A full-stack e-commerce platform for gaming consoles, gaming laptops, and accessories.",
@@ -136,7 +165,7 @@ export const devProjects = [
     repoUrl: "https://github.com/Stanlee-Sam/GamerHub_.git",
   },
   {
-    id: 5,
+    id: 6,
     title: "SmartWraps",
     description:
       "A colourful landing page for a small business selling precovered books to school children.",
