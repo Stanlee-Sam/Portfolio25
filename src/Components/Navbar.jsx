@@ -4,7 +4,6 @@ import { CiLinkedin } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { LuGithub } from "react-icons/lu";
 import { MdOutlineMenu } from "react-icons/md";
-import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "motion/react";
 
 const Navbar = () => {
@@ -14,11 +13,22 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
+    }
+  };
+
   const navLinks = [
-    { to: "/", label: "About" },
-    { to: "/webprojects/", label: "Projects" },
-    // { to: "/dataprojects/", label: "Data Science" },
-    { to: "/contact", label: "Contact" },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "skills", label: "Skills" },
+    { id: "projects", label: "Projects" },
+    { id: "services", label: "Services" },
+    { id: "contact", label: "Contact" },
   ];
 
   const container = {
@@ -58,13 +68,14 @@ const Navbar = () => {
         <div className="hidden md:flex md:flex-row items-center gap-4">
           <ul className="text-[#6a747e] flex flex-row gap-4 font-semibold">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="hover:text-[#e5e5e5] cursor-pointer hover:bg-[#283039] p-2 rounded-md"
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                onClick={(e) => handleScroll(e, link.id)}
+                className="hover:text-[#e5e5e5] cursor-pointer hover:bg-[#283039] p-2 rounded-md transition-colors"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </ul>
           <div className="flex flex-row gap-2">
@@ -103,7 +114,7 @@ const Navbar = () => {
                 {navLinks.map((link) => (
                   <motion.li
                     variants={item}
-                    key={link.to}
+                    key={link.id}
                     className="w-full flex flex-col items-center"
                   >
                     <motion.hr
@@ -111,14 +122,14 @@ const Navbar = () => {
                       style={{ originX: 0 }}
                       className="border-t border-white/60 w-4/5"
                     />
-                    <Link
-                      to={link.to}
-                      onClick={toggleHamburger}
+                    <a
+                      href={`#${link.id}`}
+                      onClick={(e) => handleScroll(e, link.id)}
                       style={{ fontFamily: "'Bree Serif'" }}
                       className="w-[80%] rounded-lg  py-2 text-center  text-white text-lg font-bold cursor-pointer hover:bg-[#1174d5]  hover:text-white transition-colors duration-300"
                     >
                       {link.label}
-                    </Link>
+                    </a>
                   </motion.li>
                 ))}
                 <li className="w-full flex flex-col items-center">
