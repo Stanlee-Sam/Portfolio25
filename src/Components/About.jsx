@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "motion/react";
 import { FaGraduationCap, FaCode, FaHeart } from "react-icons/fa";
 import { GiAchievement } from "react-icons/gi";
+import { BiCompass } from "react-icons/bi";
 
 const About = () => {
   const defaultTransition = { duration: 0.6, ease: "easeOut", delay: 0.1 };
@@ -53,7 +54,7 @@ const About = () => {
             className="flex flex-col md:flex-row gap-6 items-start"
           >
             <div className="w-14 h-14 bg-[#1174d5]/10 rounded-xl flex items-center justify-center flex-shrink-0">
-              <FaHeart className="text-[#1174d5] text-2xl" />
+              <BiCompass className="text-[#1174d5] text-2xl" />
             </div>
             <div>
               <h3 className="text-white font-bold text-2xl mb-4">Interests</h3>
