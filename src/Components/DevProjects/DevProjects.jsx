@@ -120,7 +120,7 @@ const DevProjects = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => handleViewDetails(devProject)}
-                    className="flex-1 bg-[#1174d5] text-white px-4 py-2 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 hover:bg-[#0d5bb8] transition-colors"
+                    className="flex-1 bg-[#1174d5] text-white px-4 py-2 rounded-lg font-semibold text-[11px]  flex items-center justify-center gap-2 hover:bg-[#0d5bb8] transition-colors"
                   >
                     View Details
                   </motion.button>
@@ -131,7 +131,7 @@ const DevProjects = () => {
                       href={devProject.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-[#283039] text-white px-4 py-2 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 hover:bg-[#3a4452] transition-colors"
+                      className="flex-1 bg-[#283039] text-white px-4 py-2 rounded-lg font-semibold text-[11px] flex items-center justify-center gap-2 hover:bg-[#3a4452] transition-colors"
                     >
                       <FaExternalLinkAlt size={14} />
                       Live
@@ -144,7 +144,7 @@ const DevProjects = () => {
                       href={devProject.repoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 bg-[#283039] text-white px-4 py-2 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 hover:bg-[#3a4452] transition-colors"
+                      className="flex-1 bg-[#283039] text-white px-4 py-2 rounded-lg font-semibold text-[11px] flex items-center justify-center gap-2 hover:bg-[#3a4452] transition-colors"
                     >
                       <FaGithub size={14} />
                       Code
